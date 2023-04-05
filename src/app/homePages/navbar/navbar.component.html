@@ -1,0 +1,101 @@
+<div class="header">
+  <div class="container ">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark  bg-transparent " (scroll)="onScroll()"
+      [ngClass]="navbarfixed?'fixed':'nofixed'">
+      <div class="container-xl">
+        <a class="navbar-brand bg-white" href="#">DEMO APP</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL"
+          aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample07XL">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" routerLink="/home">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" routerLink="/aboutus">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" routerLink="/jobs">JOBS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" routerLink="/clients">CLIENTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" routerLink="/employers">EMPLOYERS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" routerLink="/contectus">CONTECT US</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+
+    </nav>
+
+
+
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel bg-transparent">
+      <div class="carousel-indicators ">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1 style="font-style: italic;">I'am looking for...</h1>
+              <div class="container-fluid">
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div><br>
+              <div class="text-center">
+                <button type="button" class="btn btn-primary">Rgister</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="carousel-item">
+          
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p>Some representative placeholder content for the second slide of the carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>One more for good measure.</h1>
+              <p>Some representative placeholder content for the third slide of this carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+            </div>
+          </div>
+        </div> -->
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  </div>
+</div>
+<div class="b-example-divider"></div>
